@@ -20,3 +20,11 @@ git submodule add https://github.com/EloiStree/2026_06_07_upm_load_prefab_from_t
 
 <img width="1907" height="881" alt="image" src="https://github.com/user-attachments/assets/0893d855-c10e-4b28-82a3-a8fbbd94832d" />
 
+
+
+
+Exercice:
+https://www.youtube.com/watch?v=JzbzqD78Xyg&t=18s
+
+Solution:
+https://youtu.be/5VOHJKlRwCE?t=28
