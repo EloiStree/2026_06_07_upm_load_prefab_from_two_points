@@ -17,8 +17,10 @@ git clone https://github.com/EloiStree/2026_06_07_upm_load_prefab_from_two_point
 ```
 git submodule add https://github.com/EloiStree/2026_06_07_upm_load_prefab_from_two_points.git Packages/2026_06_07_upm_load_prefab_from_two_points
 ```
+<img width="1024"  alt="image" src="https://github.com/user-attachments/assets/09ff182e-8343-47e2-9faa-c758b8965468" />
 
-<img width="1907" height="881" alt="image" src="https://github.com/user-attachments/assets/0893d855-c10e-4b28-82a3-a8fbbd94832d" />
+
+<img width="1024" alt="image" src="https://github.com/user-attachments/assets/0893d855-c10e-4b28-82a3-a8fbbd94832d" />
 
 
 
