@@ -1,0 +1,29 @@
+{
+  "name": "be.elab.twopointsloader",
+  "displayName": "\ud83e\uddf0:Two Points Loader",
+  "version": "0.0.1",
+  "unity": "2018.1",
+  "description": "Allows to load content based on two given points",
+  "keywords": [
+    "Script",
+    "Tool"
+  ],
+  "relatedPackages": {},
+  "samples": [
+    {
+      "displayName": "Demo Scene",
+      "description": "Demo on how to use the package",
+      "path": "Scene/Demo"
+    }
+  ],
+  "author": {
+    "name": "Eloi Stree"
+  },
+  "repository": {
+    "type": "Git",
+    "url": "https://github.com/EloiStree/2026_06_07_upm_load_prefab_from_two_points.git",
+    "footprint": "",
+    "revision": ""
+  },
+  "category": "Script"
+}
