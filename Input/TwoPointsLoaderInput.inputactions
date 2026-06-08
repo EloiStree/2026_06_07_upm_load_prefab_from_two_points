@@ -70,6 +70,17 @@
                 },
                 {
                     "name": "",
+                    "id": "dd957abd-dd50-41d6-83ee-d0c37e53210d",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/thumbstickclicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetStartAndStopPoints",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8a99316a-5ee2-4e63-9d45-4b54e406e723",
                     "path": "<Keyboard>/home",
                     "interactions": "",
@@ -81,8 +92,30 @@
                 },
                 {
                     "name": "",
+                    "id": "f00bc3bc-96d0-44cf-a94f-79dcb71394d6",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/secondarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetStartPoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c41ad81e-8ddc-45ee-a366-87612e9ade21",
                     "path": "<Keyboard>/end",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetEndPoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9e36a4f7-53c0-44bb-ae47-0aab06e1b513",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/primarybutton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

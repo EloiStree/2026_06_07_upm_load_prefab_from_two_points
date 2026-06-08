@@ -388,6 +388,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 483160222857058254}
+        m_TargetAssemblyTypeName: Eloi.TwoPointsLoader.TwoPointsLoad_EmitStartEndPoints,
+          be.elab.twopointsloader.Runtime
+        m_MethodName: EmitCurrentPoint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onUp:
     m_PersistentCalls:
       m_Calls: []
@@ -438,20 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: be.elab.twopointsloader.Runtime::Eloi.TwoPointsLoader.TwoPointsLoad_EmitStartEndPoints
   m_onStartEndPointEmitted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Eloi.TwoPointsLoader.TwoPointsLoad_CreatePrefabFromStartEndPoint,
-          be.elab.twopointsloader.Runtime
-        m_MethodName: CreateFromStartEndPoints
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_startPoint: {fileID: 5501762970209997822}
   m_endPoint: {fileID: 2750018528100937628}
   m_cursorToSetPoints: {fileID: 4990041874625382518}
@@ -594,6 +594,19 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Eloi.TwoPointsLoader.TwoPointsLoad_EmitStartEndPoints,
           be.elab.twopointsloader.Runtime
         m_MethodName: SetEndPointToCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 483160222857058254}
+        m_TargetAssemblyTypeName: Eloi.TwoPointsLoader.TwoPointsLoad_EmitStartEndPoints,
+          be.elab.twopointsloader.Runtime
+        m_MethodName: EmitCurrentPoint
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
