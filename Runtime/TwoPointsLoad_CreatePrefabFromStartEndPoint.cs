@@ -1,24 +1,50 @@
-using UnityEngine;
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine.Events;
 
 namespace Eloi.TwoPointsLoader
 {
+
+    using UnityEngine;
     public class TwoPointsLoad_CreatePrefabFromStartEndPoint : MonoBehaviour
     {
 
         [SerializeField]
         private UnityEvent<GameObject> m_onCreatedPrefab;
 
-        [SerializeField] private GameObject m_prefabToCreated;
-        [SerializeField] private float m_requiredDistanceInMeter = 0.21f;
-        [SerializeField] private float m_threshold = 0.2f;
+        [SerializeField] private List<TwoPointsLoad_PrefabFromDistance> m_prefabsFromInspector = new List<TwoPointsLoad_PrefabFromDistance>();
+        [SerializeField] private TwoPointsLoad_PrefabFromDistanceList m_prefabsFromScriptable;
 
 
 
         public void CreateFromStartEndPoints(Vector3 worldPointStart, Vector3 worldPointEnd) {
-            // Code is bad an not reusable. It is just for a first draft example of the library.
+            foreach(TwoPointsLoad_PrefabFromDistance p in m_prefabsFromInspector)
+            {
+                if (p!=null)
+                { 
+                    CreateFromStartEndPoints(p,worldPointStart,worldPointEnd);
+                }
+            }
+            if (m_prefabsFromScriptable) {
+                foreach (TwoPointsLoad_PrefabFromDistance p in m_prefabsFromScriptable.GetListReference())
+                {
+                    if (p != null)
+                    {
+                        CreateFromStartEndPoints(p, worldPointStart, worldPointEnd);
+                    }
+                }
+            }
 
            
+        }
+        public void CreateFromStartEndPoints(
+            TwoPointsLoad_PrefabFromDistance target,
+            Vector3 worldPointStart,
+            Vector3 worldPointEnd)
+        {
+            if (target == null) { return; }
+
+
 
 
             Vector3 start = worldPointStart;
@@ -27,19 +53,20 @@ namespace Eloi.TwoPointsLoader
             Vector3 endFlat = end;
             endFlat.y = start.y;
             float distanceStartEndFlat = (endFlat - start).magnitude;
-            float delta = Mathf.Abs(m_requiredDistanceInMeter - distanceStartEndFlat);
-            if (delta < m_threshold) {
+            float delta = Mathf.Abs(target.GetRequiredDistanceInMeter() - distanceStartEndFlat);
+            if (delta < target.GetThresholdApproximation())
+            {
 
-                GameObject created = GameObject.Instantiate(m_prefabToCreated);
+                GameObject created = GameObject.Instantiate(target.GetPrefabToCreate());
                 created.transform.position = Vector3.zero;
                 created.transform.rotation = Quaternion.identity;
 
                 Vector3 unityForward = Vector3.forward;
-                Vector3 startEndDirection = endFlat-start;
+                Vector3 startEndDirection = endFlat - start;
 
 
                 // We need to compute it
-                float rotationToApply = Vector3.SignedAngle(unityForward,startEndDirection, Vector3.up)-90f;
+                float rotationToApply = Vector3.SignedAngle(unityForward, startEndDirection, Vector3.up) - 90f;
                 created.transform.Rotate(Vector3.up, rotationToApply);
 
                 Vector3 directionStart = worldPointStart;
