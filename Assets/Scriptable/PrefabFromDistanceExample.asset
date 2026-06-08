@@ -19,3 +19,12 @@ MonoBehaviour:
   - m_prefabToCreated: {fileID: 7882126156741487409, guid: 92e369a4aaea05342a43e29cfddf049e, type: 3}
     m_requiredDistanceInMeter: 0.297
     m_threshold: 0.02
+  - m_prefabToCreated: {fileID: 8728624832729259250, guid: e196cd6904a420d438b2ae5a429ade22, type: 3}
+    m_requiredDistanceInMeter: 0.55
+    m_threshold: 0.02
+  - m_prefabToCreated: {fileID: 4810513959772700090, guid: 185897694468cc04cb044c0a477ae95e, type: 3}
+    m_requiredDistanceInMeter: 1.2
+    m_threshold: 0.05
+  - m_prefabToCreated: {fileID: 6638413604386337514, guid: b72c196cccfde2b40a64a2bc65bd5bad, type: 3}
+    m_requiredDistanceInMeter: 3.690332
+    m_threshold: 0.2
