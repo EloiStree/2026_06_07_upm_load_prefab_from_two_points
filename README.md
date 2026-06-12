@@ -2,6 +2,8 @@
 
 > Tool to load scene or prefab from two points from start to end.
 
+Version Godot: https://github.com/EloiStree/2026_06_07_gdp_load_prefab_from_two_points
+
 
 Add to `manifest.json` in `Packages`:
 ```
