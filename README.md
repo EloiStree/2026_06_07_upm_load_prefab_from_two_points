@@ -12,12 +12,12 @@ Add to `manifest.json` in `Packages`:
 
 **Add to an not git project**
 ```
-git clone https://github.com/EloiStree/2026_06_07_upm_load_prefab_from_two_points.git Packages/2026_06_07_upm_load_prefab_from_two_points
+git clone https://github.com/EloiStree/2026_06_07_upm_load_prefab_from_two_points.git Packages/be.elab.twopointsloader
 ```
 
 **Add in a existing git project**
 ```
-git submodule add https://github.com/EloiStree/2026_06_07_upm_load_prefab_from_two_points.git Packages/2026_06_07_upm_load_prefab_from_two_points
+git submodule add https://github.com/EloiStree/2026_06_07_upm_load_prefab_from_two_points.git Packages/be.elab.twopointsloader
 ```
 <img width="1024"  alt="image" src="https://github.com/user-attachments/assets/09ff182e-8343-47e2-9faa-c758b8965468" />
 
