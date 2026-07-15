@@ -82,7 +82,7 @@
                 {
                     "name": "",
                     "id": "8a99316a-5ee2-4e63-9d45-4b54e406e723",
-                    "path": "<Keyboard>/home",
+                    "path": "<Keyboard>/pageUp",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -103,8 +103,19 @@
                 },
                 {
                     "name": "",
+                    "id": "35261773-f448-4f94-a94b-467d05d5d1a9",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetStartPoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c41ad81e-8ddc-45ee-a366-87612e9ade21",
-                    "path": "<Keyboard>/end",
+                    "path": "<Keyboard>/pageDown",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -116,6 +127,17 @@
                     "name": "",
                     "id": "9e36a4f7-53c0-44bb-ae47-0aab06e1b513",
                     "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/primarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetEndPoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "99862f7d-28e3-4871-9304-72ed939d5cd3",
+                    "path": "<XRController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
